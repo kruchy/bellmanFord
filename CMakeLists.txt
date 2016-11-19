@@ -16,6 +16,6 @@ set(SOURCE_FILES
         MatrixInput.cpp
         MatrixInput.h
         Vertex.cpp
-        Vertex.h)
+        Vertex.h Algorithm.cpp Algorithm.h BellmanFordAlgorithm.cpp BellmanFordAlgorithm.h)
 
 add_executable(BellmanFord ${SOURCE_FILES})

@@ -2,18 +2,22 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Vertex.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Edge.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Input.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MatrixInput.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ListInput.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Edge.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BellmanFordAlgorithm.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ListInput.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Input.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Vertex.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Vertex.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithm.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Input.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Edge.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MatrixInput.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Vertex.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BellmanFordAlgorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Edge.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
