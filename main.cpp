@@ -3,18 +3,17 @@
 #include <vector>
 #include <list>
 #include <utility>
-#include <limits.h>
 #include <set>
 #include<cstdlib>
 
 using namespace std;
 
-#include "Edge.h"
-#include "Input.h"
-#include "MatrixInput.h"
-#include "ListInput.h"
-#include "Algorithm.h"
-#include "BellmanFordAlgorithm.h"
+#include "model/Edge.h"
+#include "input/Input.h"
+#include "input/MatrixInput.h"
+#include "input/ListInput.h"
+#include "algorithm/Algorithm.h"
+#include "algorithm/BellmanFordAlgorithm.h"
 
 void edmondsKarp(vector<Vertex *> vertices, vector<Edge *> edges) {
 

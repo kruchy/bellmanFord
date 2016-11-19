@@ -2,8 +2,8 @@
 #ifndef BELLMANFORD_ALGORITHM_H
 #define BELLMANFORD_ALGORITHM_H
 
-#include "Vertex.h"
-#include "Edge.h"
+#include "../model/Vertex.h"
+#include "../model/Edge.h"
 #include <iostream>
 #include <cstdio>
 #include <vector>
