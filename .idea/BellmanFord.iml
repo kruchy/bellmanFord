@@ -3,21 +3,23 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/model/Edge.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/Input.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/MatrixInput.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/ListInput.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/algorithm/BellmanFordAlgorithm.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/ListInput.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/model/Vertex.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/algorithm/Algorithm.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/Input.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/input/MatrixInput.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/model/Vertex.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/algorithm/BellmanFordAlgorithm.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/algorithm/Algorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/model/Vertex.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/model/Edge.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/FordFulkersonAlgorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/FordFulkersonAlgorithm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/Algorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/Algorithm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/BellmanFordAlgorithm.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithm/BellmanFordAlgorithm.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/ListInput.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/ListInput.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/Input.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/Input.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/MatrixInput.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/input/MatrixInput.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

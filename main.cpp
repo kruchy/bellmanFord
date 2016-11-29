@@ -13,71 +13,7 @@ using namespace std;
 #include "input/MatrixInput.h"
 #include "input/ListInput.h"
 #include "algorithm/Algorithm.h"
-#include "algorithm/BellmanFordAlgorithm.h"
-
-void edmondsKarp(vector<Vertex *> vertices, vector<Edge *> edges) {
-
-}
-
-
-//void bellmanFordAlgorithm(vector<vector<int> > matrix) {
-//    int size = matrix.size();
-//    int distances[size];
-//    vector<int> path;
-//
-//    for (int i = 0; i < size; i++) distances[i] = INT_MAX;
-//
-//    for (int i = 0; i < size - 1; i++) {
-//        for (int j = 0; j < size; j++) {
-//            for (int k = 0; k < size; k++) {
-//
-//                if (matrix[j][k] != INT_MAX && distances[j] != INT_MAX && distances[j] + matrix[j][k] < distances[k])
-//                    distances[k] = distances[j] + matrix[j][k];
-//            }
-//        }
-//    }
-
-
-//}
-
-//
-//void bellmanFordAlgorithm(std::vector<Vertex *> vertices, std::vector<Edge *> edges) {
-//    int verticesSize = vertices.size();
-//    int edgesSize = edges.size();
-//    for (int i = 0; i < verticesSize; i++) {
-//        for (int j = 0; j < edgesSize; j++) {
-//            Edge *current = edges[j];
-//            if (current->start->distance + current->weight < current->end->distance) {
-//                current->end->distance = current->start->distance + current->weight;
-//                current->end->predecessor = current->start;
-//            }
-//        }
-//    }
-//
-//    for (int i = 0; i < edgesSize; i++) {
-//        Edge *current = edges[i];
-//        if (current->start->distance + current->weight < current->end->distance) {
-//            cout << "Infinite" << endl;
-//            return;
-//        }
-//
-//    }
-//    cout << "has path:" << endl;
-//    Vertex *current = vertices[verticesSize - 1];
-//    vector<int> temp;
-//    while (current != NULL) {
-//        temp.push_back(current->number);
-//        current = current->predecessor;
-//    }
-//    for (int i = temp.size() - 1; i >= 0; i--) {
-//        cout << temp[i] << " ";
-//    }
-//
-//    cout << endl;
-//
-//
-//};
-
+#include "algorithm/FordFulkersonAlgorithm.h"
 
 int main(int argc, char **argv) {
 
@@ -105,16 +41,24 @@ int main(int argc, char **argv) {
         }
     }
 
-    cout << "Enter b to do bellman, or e for edmonds-karp";
+    cout << "Enter b to do BellmanFordAlgorithm, or f for FordFulkersonAlgorithm";
     Algorithm *algorithm;
-    cin >> a;
-    if (a == "b") {
-        algorithm = new BellmanFordAlgorithm(vertices, edges);
-//        bellmanFordAlgorithm(vertices, edges);
-        algorithm->getPath();
+    string b;
+    cin >> b;
+//    if (a == "b") {
+//        algorithm = new BellmanFordAlgorithm(vertices, edges);
+//        cout << algorithm->result() << endl;
+//    }
+    if (a == "l" && b == "f") {
+        vector<Edge *> e = input->edges;
+        algorithm = new FordFulkersonAlgorithm(input->vertices, e, input->VertStart, input->VertEnd);
+        string res = algorithm->result();
+        cout << "Najwiekszy przeplyw w grafie :  " << res << endl;
     }
-    if (a == "b") {
-//        edmondsKarp(vertices, edges);
+    if (a == "m" && b == "f") {
+        algorithm = new FordFulkersonAlgorithm(input->matrix, input->start, input->end);
+        string res = algorithm->result();
+        cout << "Najwiekszy przeplyw w grafie :  " << res << endl;
     }
 
 

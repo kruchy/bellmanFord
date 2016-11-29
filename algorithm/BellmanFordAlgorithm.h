@@ -15,6 +15,8 @@ public:
 
     BellmanFordAlgorithm(vector<vector<int>> matrix);
 
+    virtual string result() override;
+
 };
 
 

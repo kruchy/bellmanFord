@@ -19,13 +19,9 @@ class Algorithm {
 public :
     vector<Vertex *> path;
 
-    void getPath() {
-        for (int i = path.size() - 1; i >= 0; i--) {
-            cout << path[i]->number << " ";
-        }
-        cout << endl;
-    }
+    virtual string result() =0;
 
+    int f = 0;
     Algorithm(vector<Vertex *> vertices, vector<Edge *> edges);
 
     Algorithm(vector<vector<int>> matrix);

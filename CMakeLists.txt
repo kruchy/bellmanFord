@@ -16,6 +16,6 @@ set(SOURCE_FILES
         input/MatrixInput.cpp
         input/MatrixInput.h
         model/Vertex.cpp
-        model/Vertex.h algorithm/Algorithm.cpp algorithm/Algorithm.h algorithm/BellmanFordAlgorithm.cpp algorithm/BellmanFordAlgorithm.h)
+        model/Vertex.h algorithm/Algorithm.cpp algorithm/Algorithm.h algorithm/BellmanFordAlgorithm.cpp algorithm/BellmanFordAlgorithm.h algorithm/FordFulkersonAlgorithm.cpp algorithm/FordFulkersonAlgorithm.h)
 
 add_executable(BellmanFord ${SOURCE_FILES})

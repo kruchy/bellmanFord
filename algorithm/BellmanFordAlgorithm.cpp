@@ -25,6 +25,17 @@ BellmanFordAlgorithm::BellmanFordAlgorithm(vector<vector<int>> matrix) {
 
 }
 
+string BellmanFordAlgorithm::result() {
+    {
+        string result = "";
+        for (int i = path.size() - 1; i >= 0; i--) {
+            result += path[i]->number + " ";
+        }
+        return result;
+
+    }
+}
+
 BellmanFordAlgorithm::BellmanFordAlgorithm(vector<Vertex *> vertices, vector<Edge *> edges) {
     int verticesSize = vertices.size();
     int edgesSize = edges.size();
