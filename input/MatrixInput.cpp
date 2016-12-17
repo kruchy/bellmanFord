@@ -9,7 +9,7 @@ void MatrixInput::getInput() {
 
     {
         int size = 7;
-        this->matrix = vector<vector<int>>({//     1  2  3  4  5  6  7
+        this->matrix = vector<vector<int>>({//                  1  2  3  4  5  6  7
                                                    vector<int>({0, 9, 0, 0, 9, 0, 0}),//1
                                                    vector<int>({0, 0, 7, 3, 0, 0, 0}),//2
                                                    vector<int>({0, 0, 0, 4, 0, 0, 6}),//3

@@ -15,12 +15,6 @@ FordFulkersonAlgorithm::FordFulkersonAlgorithm(vector<Vertex *> vertices, vector
     int max_flow = 0;
     map<Vertex *, Vertex *> previous;
     while (hasAugmentingPath(edges, edges[0]->start, edges[edges.size() - 1]->end, &previous)) {
-        cout << "----------------------------" << endl;
-        cout << "current graph" << endl;
-        for (auto p : edges) {
-            cout << p->start->number << " " << p->end->number << " weight " << p->weight << endl;
-        }
-        cout << endl;
         Vertex *current = previous[end];
         Edge *edge;
         for (int i = 0; i < edges.size(); i++) {
@@ -43,8 +37,6 @@ FordFulkersonAlgorithm::FordFulkersonAlgorithm(vector<Vertex *> vertices, vector
                     }
                 }
         } while (second.number != start->number);
-
-        cout << "Found min " << min << endl;
 
         for (int i = 0; i < edges.size(); i++) {
             if (edges[i]->start->number == previous[end]->number && edges[i]->end->number == end->number) {
